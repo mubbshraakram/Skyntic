@@ -93,10 +93,4 @@ Mubbshra Akram
 
 BS Information Technology
 University of the Punjab
-
-
-
-
-
-        ↓
 Dynamic Dashboard UI
