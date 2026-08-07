@@ -1,16 +1,102 @@
-# React + Vite
+SKYNTIC — Modern Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SKYNTIC is a modern, responsive weather dashboard built with React, JavaScript, Vite, and the Open-Meteo API. It transforms live weather data into a clean and intuitive dashboard with dynamic weather conditions, detailed metrics, and a multi-day forecast.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔎 Search weather by city
+- 📍 Current-location weather
+- 🌡️ Current temperature and weather conditions
+- 🌤️ Dynamic weather icons based on weather conditions
+- 💧 Humidity information
+- 💨 Wind speed
+- 🎚️ Atmospheric pressure
+- ☀️ UV index
+- 📅 5-day weather forecast
+- 📊 Structured weather dashboard
+- 📱 Responsive and modern interface
+- ⚡ Fast client-side experience powered by Vite
 
-## React Compiler
+🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React — Component-based frontend development
+- JavaScript (ES6+) — Application logic and data handling
+- Vite — Development server and production build tooling
+- Node.js & npm — Runtime environment and package management
+- CSS3 — Responsive styling and visual design
+- React Icons — Weather and interface icons
+- Open-Meteo API — Weather and forecast data
+- Open-Meteo Geocoding API — Location search and coordinates
 
-## Expanding the ESLint configuration
+ 🔄 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+User searches for a city
+        ↓
+Open-Meteo Geocoding API
+        ↓
+Latitude & Longitude
+        ↓
+Weather API
+        ↓
+Weather & Forecast Data
+        ↓
+React processes the responseFor current-location weather, Skyntic retrieves the user's location coordinates and uses them to fetch the corresponding weather data.
+
+📂 Project Structure
+
+Skyntic/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js🌐 API Integration
+
+Skyntic integrates with the Open-Meteo API to retrieve weather and forecast information.
+
+The application uses:
+
+Geocoding API for converting city names into coordinates
+Weather API for current weather conditions
+Forecast API for upcoming daily weather data
+
+No API key is required.
+
+💡 Key Development Concepts
+
+Skyntic demonstrates practical implementation of:
+
+React functional components
+React state management with useState
+API requests and asynchronous JavaScript
+Dynamic rendering based on API responses
+Conditional weather icon rendering
+Location-based weather retrieval
+Data transformation and presentation
+Responsive frontend design
+Modern CSS styling
+Vite development and production workflows
+npm dependency management
+Git and GitHub version control
+
+👩‍💻 Author
+Mubbshra Akram
+
+BS Information Technology
+University of the Punjab
+
+
+
+
+
+        ↓
+Dynamic Dashboard UI
